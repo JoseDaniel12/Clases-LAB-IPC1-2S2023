@@ -4,6 +4,8 @@
  */
 package ipc1.clase6;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 
@@ -39,6 +41,15 @@ public class ProfesorJFrame extends javax.swing.JFrame {
             JButton botonCurso = new JButton(curso.nombre);
             JLabel  label = new JLabel("50: estudiantes");
             botonCurso.setBounds(coordeandaX, coordeandaY, 90, 30);
+            // Agregar una accion al presionar el boton
+            botonCurso.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    // Lo que queremos que se haga al presionar el boton
+                    System.out.println("Hola");
+                }
+            });
+            
             label.setBounds(coordeandaX, coordeandaY + 30, 100, 30);
           
             this.add(botonCurso);
