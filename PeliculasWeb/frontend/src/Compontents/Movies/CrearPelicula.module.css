@@ -1,0 +1,19 @@
+.containers {
+    width: 800px;
+    padding: 20px;
+    background-color: rgb(225, 225, 225);
+    border-radius: 5px;
+}
+
+.titulo {
+    margin: auto;
+}
+
+.descripcion {
+    height: 150px;
+}
+
+.imagen {
+    width: 100%;
+    height: 204px;
+}
