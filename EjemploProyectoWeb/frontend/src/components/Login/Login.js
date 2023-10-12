@@ -1,7 +1,8 @@
 import styles from './Login.module.css';
 import { useNavigate } from 'react-router-dom';
 
-function Login() {
+function Login(props) {
+    const navigate = useNavigate();
 
     const handleIngresar = async (e) => {
         e.preventDefault();
@@ -23,13 +24,22 @@ function Login() {
             return;
         }
 
+        props.setUsuario(data.usuario);
+        switch (data.usuario.tipoUsuario) {
+            case "PACIENTE":
+                navigate('/paciente')
+                break;
+            case "ENFERMERA":
+                navigate('/enfermera')
+                break;
+        }
     }
 
     return (
         <form onSubmit={handleIngresar} className={styles.formContainer} encType="multipart/form-data">
             <div>
                 <label htmlFor="nombreUsuario" className={styles.label}>Nombre de Usuario:</label>
-                <input type="text" id="nombreUsuario" name="nombre" placeholder="nombre"></input>
+                <input type="text" id="nombreUsuario" name="nombre" placeinputholder="nombre"></input>
             </div>
             <div>
                 <label htmlFor="contrasenia" className={styles.label}>Contraseña:</label>
