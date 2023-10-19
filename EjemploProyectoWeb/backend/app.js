@@ -27,5 +27,6 @@ app.get('/', async (_, res) => {
 
 app.use('/auth', require('./routes/auth.routes.js'));
 app.use('/paciente', require('./routes/paciente.routes.js'));
+app.use('/enfermera', require('./routes/enfermera.routes.js'));
 
 module.exports = app;

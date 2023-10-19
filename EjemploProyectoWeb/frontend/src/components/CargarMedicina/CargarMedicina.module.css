@@ -1,0 +1,60 @@
+.contenedorRaiz {
+    width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: start;
+    gap: 50px;
+}
+
+.contenedorCarga {
+    background-color: rgb(225, 225, 225);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.label {
+    display: block;
+}
+
+table {
+    border-style: solid;
+    border-color: rgb(58, 58, 58);
+    border-width: 1px;
+}
+
+th {
+    background-color: #212529;
+    color: whitesmoke;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: #d0d0d0;
+}
+
+
+.boton {
+    border-style: none;
+    border-radius: 5px;
+    padding: 7px;
+    margin: 2px;
+}
+
+.cargar {
+    background-color: #28a745;
+    color: whitesmoke;
+    margin-top: 10px;
+}
+
+.modificar {
+    background-color: #ffc107;
+}
+
+.eliminar {
+    background-color: #dc3545;
+    color: whitesmoke;
+}

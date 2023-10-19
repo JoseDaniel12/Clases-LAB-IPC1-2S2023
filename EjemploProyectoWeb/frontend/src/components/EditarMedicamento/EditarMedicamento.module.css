@@ -1,0 +1,49 @@
+.contenedor {
+    background-color: rgb(225, 225, 225);
+    padding: 20px;
+    border-radius: 8px;
+    width: 430px;
+    margin: auto;
+}
+
+.label {
+    display: block;
+}
+
+table {
+    border-style: solid;
+    border-color: rgb(58, 58, 58);
+    border-width: 1px;
+}
+
+th {
+    background-color: #212529;
+    color: whitesmoke;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: #d0d0d0;
+}
+
+
+.boton {
+    border-style: none;
+    border-radius: 5px;
+    padding: 7px;
+    margin-top: 10px;
+    margin-right: 4px;
+}
+
+.regresar {
+    background-color: #ffc107;
+}
+
+.modificar {
+    background-color: #007bff;
+    color: rgb(233, 233, 233);
+}
