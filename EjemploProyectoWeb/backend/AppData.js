@@ -24,9 +24,9 @@ citas = [
     }
 ]
 
-pedidos = [
+carritos = [
     {
-        idPedido: '2574c9d2-4d75-480f-89d6-f255769db2cf',
+        idCarrito: '2574c9d2-4d75-480f-89d6-f255769db2cf',
         fecha: '11/10/2023',
         registrado: false,
         idUsuario: '9b1deb4d-3b7d-4bad-9bdd-2b0d7b3dcb6d'
@@ -50,19 +50,19 @@ medicinas = [
     }
 ]
 
-medicinasPedidos = [
+medicinasCarrito = [
     {
-        idMedicinaPedido: '29f6314c-6d43-41dd-bdc6-dac8b2078317',
+        idMedicinaCarrito: '29f6314c-6d43-41dd-bdc6-dac8b2078317',
         cantidad: 1,
         idMedicina: '651cd53a-96e3-4cfe-bf75-d1c6fb1dc75d',
-        idPedido: '2574c9d2-4d75-480f-89d6-f255769db2cf'
+        idCarrito: '2574c9d2-4d75-480f-89d6-f255769db2cf'
     }
 ]
 
 module.exports = {
     usuarios,
     citas,
-    pedidos,
+    carritos,
     medicinas,
-    medicinasPedidos
+    medicinasCarrito
 }
